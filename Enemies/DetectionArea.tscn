@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="DetectionArea" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[connection signal="body_entered" from="." to="." method="_on_DetectionArea_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_DetectionArea_body_exited"]
